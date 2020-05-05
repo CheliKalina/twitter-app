@@ -1,10 +1,12 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  font-size: 12px;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+.menu {
+  background-color:rgb(39, 39, 41)
+  ;
+  color:white;
+  width:100%;
+}
+
+a {
+  color:grey;
+}
+
+a:hover {
+  color:white; 
+  text-decoration: none;
+  color:inherit;
+}
+
+a:active {
+  color:white;
+}
+
+a:link {
+  color:grey;
+}
+
+.tweet {
+  width:500px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
 }

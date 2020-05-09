@@ -1,12 +1,10 @@
-
 .App {
-  text-align: center;
+  /* text-align: center; */
   background-color: black;
   color: white;
   width: 100%;
   height: 100vh;
   font-size: 12px;
-  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,34 +36,126 @@
     transform: rotate(360deg);
   }
 }
+
 .menu {
-  background-color:rgb(39, 39, 41)
-  ;
-  color:white;
-  width:100%;
+  background-color: rgb(39, 39, 41);
+  color: white;
+  width: 100%;
 }
 
 a {
-  color:grey;
+  color: grey;
 }
 
 a:hover {
-  color:white; 
+  color: white;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 a:active {
-  color:white;
+  color: white;
 }
 
 a:link {
-  color:grey;
+  color: grey;
 }
 
-.tweet {
-  width:500px;
+.tweetBox {
+  width: 100%;
   height: 200px;
   border: 1px solid white;
   border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.tweet {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  align-self: flex-end;
+}
+
+.tweeted {
+  color: white;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(39, 39, 41);
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: grey;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  color: rgb(148, 0, 0);
+  border: 1px solid rgb(148, 0, 0);
+  background-color: pink;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+  color: red;
+}
+
+textarea {
+  background-color: black;
+  border-color: transparent;
+  height: 100%;
+  outline: none;
+  color: white;
+  word-wrap: break-word;
+}
+
+ol {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.tweetHolder {
+  border-radius: 3px;
+  color: grey;
+  background-color: rgb(63, 63, 63);
+  margin: 5px;
+}
+
+li{
+  padding: 5px;
+  margin: 5px
+}
+
+.elements{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.tweetText{
+  color: white;
+  font-size: 14px;
+  margin: 10px 0px
 }

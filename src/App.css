@@ -1,46 +1,38 @@
+html, body {
+  background-color: black;
+
+}
 .App {
   /* text-align: center; */
-  background-color: black;
+  /* background-color: black; */
   color: white;
   width: 100%;
   height: 100vh;
   font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.menu {
+.navbar {
   background-color: rgb(39, 39, 41);
   color: white;
   width: 100%;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
 }
 
 a {
@@ -62,14 +54,16 @@ a:link {
 }
 
 .tweetBox {
-  width: 100%;
+  width: 80%;
   height: 200px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tweet {
@@ -84,9 +78,11 @@ a:link {
   flex-direction: column;
 }
 
-.btn {
+.tweet-btn {
   display: flex;
   align-self: flex-end;
+  align-items: center;
+  flex-direction: row;
 }
 
 .tweeted {
@@ -131,8 +127,9 @@ textarea {
 
 ol {
   list-style-type: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .tweetHolder {
@@ -140,22 +137,58 @@ ol {
   color: grey;
   background-color: rgb(63, 63, 63);
   margin: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
-li{
+li {
   padding: 5px;
   margin: 5px
 }
 
-.elements{
+.elements {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 11px;
 }
 
-.tweetText{
+.tweetText {
   color: white;
   font-size: 14px;
   margin: 10px 0px
+}
+
+.profile {
+  background-color: black;
+  width: 85%;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.profileinput {
+  z-index: 1;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  padding: 5px;
+}
+
+.profile-btn {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
+
 }

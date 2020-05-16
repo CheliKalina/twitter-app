@@ -22,12 +22,6 @@ class Profile extends React.Component {
         localStorage.setItem("userName", saveUser); 
         
     };
-    
-    // componentDidMount() {
-    //     const userName2 = localStorage.getItem("userName");
-    //     this.setState({ userName2 });
-    //     console.log(userName2);
-    // }
 
     render() {
         return (

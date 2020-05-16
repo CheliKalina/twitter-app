@@ -163,7 +163,7 @@ li {
 
 .profile {
   background-color: black;
-  width: 85%;
+  width: 80%;
   height: 200px;
   border: 1px solid white;
   border-radius: 5px;
@@ -171,6 +171,7 @@ li {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
 }

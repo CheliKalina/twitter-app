@@ -1,21 +1,28 @@
-import React from 'react';
-import CreateTweet from "./CreateTweet";
+import React, {useContext} from 'react';
+//import CreateTweet from "./CreateTweet";
 import '../App.css';
+import TweetListContext from "../context";
 
-const TweetList = props => {
+
+
+const TweetList = () => {
+    const context = useContext(TweetListContext);
     return (
         <div>
             <ol>
-                {props.tweets.map(el => (
-                    <div className="tweetHolder">
-                        <CreateTweet
-                            userName={el.userName}
-                            date={el.date}
-                            content={el.content}
-                            key={[el.date]}
-                        />
-                    </div>
-                ))}
+                    {context.tweets.map(el => (
+                        <div className="tweetHolder">
+                            <li>
+                            <div id="tweetHolder">
+                            <div className="elements">
+                                <span> {el.userName} </span>
+                                <span> {el.date} </span>
+                            </div>
+                            <p className="tweetText"> {el.content} </p>
+                        </div>
+                        </li>
+                        </div>
+                    ))}
             </ol>
         </div>
     )
